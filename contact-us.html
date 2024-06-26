@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IFTAS</title>
+<meta name="Description" content="" />
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+ 
+<!-- Header Start --> 
+<header class="header">
+    <div class="main_header" id="myHeader">
+        <div class="row align_center">
+            <div class="col-sm-3 col-7">
+                <div class="logo">
+                    <a href="/"><img src="images/logo.png" width="150" height="50" alt=""></a>
+                </div>
+            </div>
+            <div class="col-sm-9 col-5 removePosition">
+                <div class="mobile_nav">
+                    <a class="search_icon" href="javascript:;"><img src="images/search.png"></a>
+                    <div class="search_container">
+                        <input type="search" class="txtSearchBox" placeholder="Search Here...">
+                        <a href="javascript:;" onclick="Search(this)">GO</a>
+                    </div>
+                    <div class="mobile_nav d-inline-block d-none d-sm-block d-md-none">
+                        <div class="hamburger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li>
+                                <a class="m_nav" href="javascript:;">Services</a>
+                                <ul class="dropdown_nav">
+                                    <li><a class="m_nav" href="javascript:;">INFINET</a></li>
+                                    <li><a class="m_nav" href="javascript:;">SFMS</a></li>
+                                    <li><a class="m_nav" href="services-cloud.html">Cloud</a></li>
+                                    <li><a class="m_nav" href="javascript:;">Gift</a></li>
+                                    <li><a class="m_nav" href="javascript:;">Gold Store</a></li>
+                                    <li><a class="m_nav" href="javascript:;">LMS</a></li>
+                                    <li><a class="m_nav" href="javascript:;">Lorim</a></li>
+                                    <li><a class="m_nav" href="javascript:;">Lorim</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="javascript:;">Media</a></li>
+                            <li><a href="javascript:;">Careers</a></li>
+                            <li><a class="contact-btn" href="javascript:;">Contact Us</a></li>
+                            <li class="search_icon">
+                                <a href="javascript:;"><img src="images/search.png"></a>
+                                <div class="search_container">
+                                    <input type="search" class="txtSearchBox" placeholder="Search Here...">
+                                    <a href="javascript:;" onclick="Search(this)">GO</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- <div class="menu-height"></div> -->
+<!-- Header End -->
+
+<section class="inner_banner">
+    <div class="container">
+        <div class="row">
+            <div class="inner_banner_content">
+                <h1>GET IN TOUCH</h1>
+                <p>Lorim ipsum dolr</p>
+            </div>
+        </div>
+    </div>
+    <figure>
+        <picture>
+            <source media="(max-width: 767px)" srcset="images/inner-banner/about-us-mobile.jpg" alt=""
+                height="600" width="800">
+            <img src="images/inner-banner/about-us.jpg" alt="" height="600" width="1920">
+        </picture>
+    </figure>
+</section>
+
+<section class="section-padding bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input_container">
+                        <input type="text" id="name" class="floatlabel" />
+                        <label for="name">Name *</label>
+                        <span class="error_msg" id=""></span>
+                    </div>
+                </div>                
+                <div class="col-sm-6">
+                    <div class="input_container">
+                        <input type="text" id="Mobile_Number" class="floatlabel" />
+                        <label for="Mobile_Number">Mobile *</label>
+                        <span class="error_msg" id=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input_container">
+                        <input type="text" id="Company_Name" class="floatlabel" />
+                        <label for="Company_Name">Company Name *</label>
+                        <span class="error_msg" id=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input_container">
+                        <input type="text" id="Designation" class="floatlabel" />
+                        <label for="Designation">Designation *</label>
+                        <span class="error_msg" id=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input_container">
+                        <input type="text" id="Location" class="floatlabel" />
+                        <label for="Location">Location *</label>
+                        <span class="error_msg" id=""></span>
+                    </div>
+                </div>
+
+                <!-- <div class="col-sm-6">
+                    <div class="input_container select_container">
+                        <select id="Location" class="floatlabel">
+                            <option></option>
+                            <option>Mumbai</option>                            
+                            <option>Mumbai</option>                            
+                        </select>
+                        <label for="Location">Location *</label>
+                        <span class="error_msg" id=""></span>
+                    </div>
+                </div> -->
+                <div class="col-sm-12">
+                    <div class="input_container">
+                        <textarea rows="5" id="Description" class="floatlabel"></textarea>
+                        <label for="Description">What you would like to know *</label>
+                        <span class="error_msg" id=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form_btn mt-3">
+                        <a href="#">Submit</a>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="thank-you mt-3 hide pt-4 ">
+                        <h4>Thank you text</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ofc-item">
+                    <h4 class="mb-3">Registered Office</h4>
+                    <p>NCC House, 4th Floor, Western Wing, <br>Sy. No 64, Madhapur, Hyderabad-500081, <br>Telangana <br>040 - 3002 4000 / 4752 4000.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6195.404035410168!2d78.391115!3d17.437864!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d17.4364568!2d78.3881645!5e1!3m2!1sen!2sin!4v1599461816657!5m2!1sen!2sin"
+                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ofc-item">
+                    <h4 class="mb-3">Corporate Office</h4>
+                    <p>Unit No.4, 3rd Floor, Times Square-Phase-D, <br>IT Park, Tower D Andheri-Kurla Road, <br>Andheri (East), Mumbai-400 059 <br>022 - 6292 6000.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d1534.0054248346717!2d72.884152!3d19.108896!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d19.1088955!2d72.8841518!5e1!3m2!1sen!2sin!4v1599461839021!5m2!1sen!2sin"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Start -->
+<footer class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="footer-link">
+                    <ul>
+                        <li><a href="javascript:;">Career</a></li>
+                        <li><a href="javascript:;">Procurement</a></li>
+                        <li><a href="javascript:;">Resources</a></li>
+                        <li><a href="javascript:;">Disclaimer</a></li>
+                        <li><a href="javascript:;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <p>IFTAS is a section 8 company, registered under the Companies Act 2013 (CIN:U74900TG2015NPL0985)<br>
+                &#169; 2020 IFTAS, All rights reserved.</p>
+            </div>
+            <div class="col-sm-3">
+                <p>+91 22-62926000 | contact@iftas.in
+                <br>Unit No.4, 3rd Floor, Times Square
+                <br>Phase-D, IT Park,
+                <br>Tower D Andheri-Kurla Road,
+                <br>Andheri (East), Mumbai-400 059</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End --> 
+
+<!-- Global JS -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/simplebar.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+
+</script>
+</body>
+
+</html>
